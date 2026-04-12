@@ -6682,8 +6682,8 @@ cc_prebuilt_library_shared {
                 "libsynx",
                 "libcvface_api",
                 "libFlickerDet",
-                "libmegface",
-                "libMegviiFacepp-0.5.2",
+                "libfacedet",
+                "libFaceDetectpp-0.5.2",
                 "libtinyxml2",
                 "liblz4",
                 "libz",
@@ -6898,6 +6898,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libFaceDetectpp-0.5.2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libFaceDetectpp-0.5.2.so",
+            ],
+            shared_libs: [
+                "libfacedet",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libFlickerDet",
     owner: "xiaomi",
     strip: {
@@ -6941,33 +6968,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMegviiFacepp-0.5.2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so",
-            ],
-            shared_libs: [
-                "libmegface",
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-                "libEGL",
-                "libGLESv2",
             ],
         },
     },
@@ -8566,6 +8566,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfacedet",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfacedet.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libfocus",
     owner: "xiaomi",
     strip: {
@@ -8828,30 +8852,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmegface",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmegface.so",
-            ],
-            shared_libs: [
-                "libm",
-                "liblog",
-                "libdl",
-                "libc",
             ],
         },
     },

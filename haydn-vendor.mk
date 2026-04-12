@@ -61,10 +61,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/det_quantize.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/det_quantize.dlc \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/eisoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eisoverridesettings.txt \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/ellc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ellc.bin \
+    vendor/xiaomi/haydn/proprietary/vendor/etc/camera/facedetectpp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetectpp_0_5_2_model \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/fusion_models/fusion_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fusion_models/fusion_cache \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/fusion_models/fusion_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fusion_models/fusion_model \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/fusion_models/fusion_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fusion_models/fusion_policy \
-    vendor/xiaomi/haydn/proprietary/vendor/etc/camera/megviifacepp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megviifacepp_0_5_2_model \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/mibokeh_855_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_opencl.bin \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/mibokeh_855_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_parameter.bin \
     vendor/xiaomi/haydn/proprietary/vendor/etc/camera/model1.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model1.dlc \
@@ -531,9 +531,9 @@ PRODUCT_PACKAGES += \
     fingerprint.fpc.lahaina \
     libAF \
     libBlinkStub \
+    libFaceDetectpp-0.5.2 \
     libFlickerDet \
     libI420colorconvert \
-    libMegviiFacepp-0.5.2 \
     libQnnHtpStub \
     libSNPE \
     lib_sr_models \
@@ -586,6 +586,7 @@ PRODUCT_PACKAGES += \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libellc \
+    libfacedet \
     libfocus \
     libhdrdynamic \
     libhdrdynamicootf \
@@ -593,7 +594,6 @@ PRODUCT_PACKAGES += \
     libipebpsstriping \
     libjpege \
     libmctfengine_stub \
-    libmegface \
     libmiai_deblur \
     libmiai_portraitsupernight \
     libmialgo_ai_vision \
