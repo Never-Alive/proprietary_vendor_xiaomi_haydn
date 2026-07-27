@@ -533,6 +533,7 @@ PRODUCT_PACKAGES += \
     libBlinkStub \
     libFlickerDet \
     libI420colorconvert \
+    libQnnHtpStub \
     libSNPE \
     lib_sr_models \
     libaidenoiser \
