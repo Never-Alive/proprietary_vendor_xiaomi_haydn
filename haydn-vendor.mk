@@ -357,8 +357,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
-    audio.primary.lahaina \
-    liba2dpoffload \
+    audio.primary.haydn \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -377,7 +376,6 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libresampler \
     libsndmonitor \
-    libssrec \
     HDR10plus \
     com.qti.eeprom.haydn_ofilm_imx355_bl24s64_ultra_eeprom \
     com.qti.eeprom.haydn_sunny_imx686_gt24p128e_wide_eeprom \
@@ -711,6 +709,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_misound_karaokemix_res_bin \
     vendor_lib_rfsa_adsp_misound_res_headphone_bin \
     vendor_lib_rfsa_adsp_misound_res_spk_bin \
+    liba2dpoffload_odm \
+    libssrec_odm \
     batterysecret \
     init.qcom.sensors \
     sensors.qti \
