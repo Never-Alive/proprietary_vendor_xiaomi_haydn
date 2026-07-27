@@ -368,14 +368,10 @@ PRODUCT_PACKAGES += \
     libaudiocloudctrl \
     libaudioparsers \
     libaudioroute_ext \
-    libbatterylistener \
     libfcsam \
-    libhdmiedid \
     libhdmipassthru \
-    libhfp \
     libqtigef \
     libresampler \
-    libsndmonitor \
     HDR10plus \
     com.qti.eeprom.haydn_ofilm_imx355_bl24s64_ultra_eeprom \
     com.qti.eeprom.haydn_sunny_imx686_gt24p128e_wide_eeprom \
